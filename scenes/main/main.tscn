@@ -17,5 +17,18 @@ layer_0/tile_data = PackedInt32Array(262145, 131072, 4, 262144, 131072, 4, 19660
 
 [node name="Player" parent="." instance=ExtResource("1_epcjf")]
 
-[node name="BasicEnemy" parent="." instance=ExtResource("4_tq5wp")]
-position = Vector2(72, 40)
+[node name="BasicEnemy" parent="." groups=["enemy"] instance=ExtResource("4_tq5wp")]
+position = Vector2(102, -19)
+
+[node name="BasicEnemy2" parent="." groups=["enemy"] instance=ExtResource("4_tq5wp")]
+position = Vector2(23, 153)
+
+[node name="BasicEnemy3" parent="." groups=["enemy"] instance=ExtResource("4_tq5wp")]
+position = Vector2(41, -78)
+rotation = -0.00259142
+
+[node name="BasicEnemy4" parent="." groups=["enemy"] instance=ExtResource("4_tq5wp")]
+position = Vector2(-148, -97)
+
+[node name="BasicEnemy5" parent="." groups=["enemy"] instance=ExtResource("4_tq5wp")]
+position = Vector2(-96, 111)

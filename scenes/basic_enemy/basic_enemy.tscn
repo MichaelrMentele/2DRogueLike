@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bkk0o8xg8frem"]
+[gd_scene load_steps=5 format=3 uid="uid://bkk0o8xg8frem"]
 
 [ext_resource type="Script" path="res://scenes/basic_enemy/basic_enemy.gd" id="1_5457d"]
 [ext_resource type="Texture2D" uid="uid://533cp56y4h10" path="res://scenes/basic_enemy/basic_enemy.png" id="1_lccff"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vvcjm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v2rnp"]
 radius = 6.0
@@ -9,6 +11,14 @@ radius = 6.0
 [node name="BasicEnemy" type="CharacterBody2D"]
 collision_layer = 0
 script = ExtResource("1_5457d")
+
+[node name="Area2D" type="Area2D" parent="."]
+light_mask = 0
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_vvcjm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_lccff")
