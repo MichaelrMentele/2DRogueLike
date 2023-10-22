@@ -30,7 +30,7 @@ func on_timer_timeout():
 	player.get_parent().add_child(sword_instance)
 	sword_instance.global_position = enemies[0].global_position
 	# randomize the spawn point in a circle around the enemy
-	sword_instance.global_position += Vector2.RIGHT.rotated(randf_range(0, TAU)) * 4
+#	sword_instance.global_position += Vector2.RIGHT.rotated(randf_range(0, TAU)) * 4
 
 	# dir vector
 	var enemy_direction = enemies[0].global_position - sword_instance.global_position
